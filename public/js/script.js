@@ -11,12 +11,12 @@ let autopilot;
 let gameEnded;
 let robotPrecision; // Determines how precise the game is on autopilot
 
+
 const scoreElement = document.getElementById("score");
 const instructionsElement = document.getElementById("instructions");
 const resultsElement = document.getElementById("results");
 
 init();
-
 
 // Determines how precise the game is on autopilot
 
@@ -65,7 +65,6 @@ function init() {
     // Scene
 
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x585858);
 
     // Foundation
 
@@ -91,8 +90,9 @@ function init() {
     });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setAnimationLoop(animation);
+    renderer.autoClear = false;
+    renderer.setClearColor(0x000000, 0);
     document.body.appendChild(renderer.domElement);
-
 }
 
 
@@ -196,7 +196,7 @@ function generateBox(x, y, z, width, depth, falls) {
     // ThreeJS
 
     const geometry = new THREE.BoxGeometry(width, originalBoxHeight, depth);
-    const color = new THREE.Color(`hsl(${30 + stack.length * 4}, 100%, 50%)`);
+    const color = new THREE.Color(`hsl(${60 + stack.length * 10}, 45%, 50%)`);
     const material = new THREE.MeshLambertMaterial({ color });
     const mesh = new THREE.Mesh(geometry, material);
     mesh.position.set(x, y, z);

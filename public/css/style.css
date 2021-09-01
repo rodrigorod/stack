@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+body {
+    margin: 0;
+    color: white;
+    font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#instructions {
+    display: none;
+}
+
+#results,
+body #instructions {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to bottom, hsl(177, 82%, 56%), rgb(189, 240, 108));
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#results {
+    display: none;
+    cursor: default;
+}
+
+#score {
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    top: 30px;
+    right: 30px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 120px;
+    text-align: center;
+}
+
+.press {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+}
