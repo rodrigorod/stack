@@ -1,3 +1,11 @@
 # Stack
 
-Launch it by launching a live server - https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+## Installation
+
+- Clone this repo
+
+``` git clone https://github.com/rodrigorod/stack.git```
+
+- Start server
+
+- Enjoy
